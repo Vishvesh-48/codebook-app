@@ -31,7 +31,7 @@ export const ProductDetail = () => {
     async function fetchProduct() {
       const response = await fetch(`${process.env.REACT_APP_HOST}/444/products/${id}`)
       if (!response.ok) {
-        throw { messeage: response.statusText, status: response.status }
+        throw { messeage: response.statusText, status: response.status } // eslint-disable-line
       }
       try {
         const data = await response.json()

@@ -1,4 +1,4 @@
-import { Link, json } from "react-router-dom"
+import { Link } from "react-router-dom"
 import Logo from "../../assets/logo.png"
 import { useEffect, useState } from "react"
 import { Search } from "../Sections/Search"

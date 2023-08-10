@@ -22,7 +22,7 @@ export const Checkout = ({ setCheckOut }) => {
             setUser(data)
         }
         getUsers()
-    }, [])
+    }, []) //eslint-disable-line
 
 
     async function handleOrder(event) {

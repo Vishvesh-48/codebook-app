@@ -19,7 +19,7 @@ export const DashboardPage = () => {
         headers: { "content-type": "application/json", Authorization: `Bearer ${token}` }
       })
       if (!response.ok) {
-        throw { message: response.statusText, status: response.status }
+        throw { message: response.statusText, status: response.status } // eslint-disable-line
       }
       try {
         const data = await response.json()
@@ -30,7 +30,7 @@ export const DashboardPage = () => {
 
     }
     fetchOrders()
-  }, [])
+  }, []) // eslint-disable-line
 
 
   return (

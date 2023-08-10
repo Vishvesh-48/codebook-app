@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useCart } from "../../../context/CartContext"
 
 export const CartCard = ({product}) => {
-     const {cartList , removeFromCart} = useCart()
+     const {removeFromCart} = useCart()
 
      function handleRemove(product){
       removeFromCart(product)

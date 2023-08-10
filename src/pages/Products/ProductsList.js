@@ -17,7 +17,7 @@ export const ProductsList = () => {
     async function fetchProducts(){
       const response = await fetch(`${process.env.REACT_APP_HOST}/444/products?name_like=${searchTerm ? searchTerm : "" }`)
       if(!response.ok){
-        throw{message  : response.statusText, status : response.status}
+        throw{message  : response.statusText, status : response.status} //eslint-disable-line
       }
       try {
         const data = await response.json()
