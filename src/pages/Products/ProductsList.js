@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
 import { ProductCard } from "../../componet"
 import { FilterBar }  from "./componets/FilterBar"
+import { toast } from "react-toastify"
 import { useLocation } from "react-router-dom"
 import { useFilter } from "../../context/FilterContext"
 import { useTitle } from "../../hooks/useTitle"
-import { toast } from "react-toastify"
+
 export const ProductsList = () => {
 
   useTitle("ProductList")
