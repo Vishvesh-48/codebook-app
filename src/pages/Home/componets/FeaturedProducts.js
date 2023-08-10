@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
 import { ProductCard } from "../../../componet"
+import { useEffect, useState } from "react"
 import { toast } from "react-toastify"
 
 export const FeaturedProducts = () => {
